@@ -8,17 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <div id="password-section">
+        <h1>동아리 신청 관리 페이지</h1>
+        <div id="login-section">
             <label for="password">비밀번호:</label>
-            <input type="password" id="password" class="large-input">
-            <button class="large-button" onclick="checkPassword()">완료</button>
+            <input type="password" id="password" placeholder="비밀번호 입력">
+            <button onclick="checkPassword()">완료</button>
         </div>
-        
         <div id="admin-section" style="display: none;">
-            <h1>동아리 신청 관리 페이지</h1>
             <div id="submitted-data"></div>
-            <button class="large-button" onclick="deleteLatestSubmission()">최근 정보 삭제</button>
-            <button class="large-button" onclick="restoreLatestSubmission()">최근 정보 복구</button>
+            <button onclick="deleteLatestSubmission()">최근 정보 삭제</button>
+            <button onclick="restoreLastDeleted()">최근 정보 복구</button>
         </div>
     </div>
     <script src="scripts.js"></script>
